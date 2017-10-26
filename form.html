@@ -1,0 +1,74 @@
+<html>
+	<head>
+
+	<style>
+fieldset {
+  overflow: hidden;
+  width: 50%;
+}
+
+label {
+  float: none;
+  padding-right: 10px;
+  width: 100px;
+  clear: both;
+}
+
+input, select {
+  float: none;
+}
+</style>
+
+		<title>Form</title>
+
+	</head>
+	<body>
+
+<form name="basic" method="post">
+<fieldset>
+<legend>A Very Basic Form</legend>
+	<p>First Name: <input type="text" name="firstname" id="firstname"/></p>
+	<p>Last Name: <input type="text" name="lastname" id="lastname" /></p>
+	<p>Email: <input type="text" name="email" /> (Required)</p>
+
+
+	<p>Pick one...<br />
+	<label for="cold">Cold</label><input type="radio" name="temperature" id="cold" /> <br />
+	<label for="warm">Warm</label><input type="radio" name="temperature" id="warm" /></p>
+
+	<p>Pick one...<br />
+	<label for="beach">Beach</label><input type="radio" name="location" id="beach" /> <br />
+	<label for="snow">Snow</label><input type="radio" name="location" id="snow" /></p>
+
+	<p>Pick one...<br />
+	<label for="mountains">Mountains</label><input type="radio" name="landforms" id="mountains" /> <br />
+	<label for="plains">Plains</label><input type="radio" name="landforms" id="plains" /></p>
+
+	<p>What contient(s) have you been to?<br />
+	<input type="checkbox" name="contient" value="Africa" />Africa <br />
+	<input type="checkbox" name="contient" value="Australia" />Australia <br />
+	<input type="checkbox" name="contient" value="Asia" />Asia <br />
+	<input type="checkbox" name="contient" value="Antarctica" />Antarctica <br />
+	<input type="checkbox" name="contient" value="Europe" />Europe <br />
+	<input type="checkbox" name="contient" value="North America" />North America <br />
+	<input type="checkbox" name="contient" value="South America" />South America </p>
+
+	<p>What mode of transportation do you perfer the most?</p>
+	<select name="transportation">
+		<option value= >--Select One--</option>
+		<option value="car">Car</option>
+		<option value="Plane">Plane</option>
+		<option value="Train">Train</option>
+		<option value="Boat">Boat</option>
+		<option value="Bus">Bus/Subway</option>
+		<option value="Bike">Bike</option>
+	</select>
+
+	<p>Describe a place in the world that you visited that was your favorite. <br/> <textarea rows="4" cols="50" id="message" name="message"></textarea></p>
+
+	<p> <input type="submit" value="Submit" /> 
+		<input type="reset" value="Reset" /></p>
+</fieldset>
+</form>
+	</body>
+</html>
